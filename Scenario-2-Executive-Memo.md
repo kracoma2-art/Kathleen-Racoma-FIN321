@@ -1,9 +1,9 @@
 # [Memo Title]
 
-**Created by:** [name]  
-**Updated by:** [name]  
-**Date Created:** [date]  
-**Date Updated:** [date]  
+**Created by:** [Kathleen Racoma]
+**Updated by:** [Kathleen Racoma]  
+**Date Created:** [10/23/2025]  
+**Date Updated:** [10/23/2025]  
 **Version:** [0.0]
 **LLM Used:"" [LLM] (optional if LLm used)
 
