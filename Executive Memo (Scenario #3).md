@@ -1,6 +1,6 @@
 # Executive Memo (Scenario #3)
 
-**Created by:** [Kathleen Racoma]
+**Created by:** [Kathleen Racoma] 
 **Updated by:** [Kathleen Racoma]  
 **Date Created:** [10/23/2025]  
 **Date Updated:** [10/23/2025]  
