@@ -29,7 +29,6 @@ To acheive the objectives of the project I will be using a step by step approach
 
 ## Limitations & Next Steps
 Limitations: Our analysis assumes current marekt rates remain stable when the hedge is executed. This prototype does not include operational or tax impacts of hedging decisions. It may be hard to gather all the infromation and intergrate it into the prototype.
-
 Next Steps: Confirm data on latest spot, forward, and interest rates asap with the finance team. Build the excel prototype with the treasury team to implement the testing of the three hedging strategies.
 
 ---
