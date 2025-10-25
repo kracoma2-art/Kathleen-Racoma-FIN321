@@ -35,7 +35,5 @@ Next Steps: Confirm data on latest spot, forward, and interest rates asap with t
 
 ## References
 Yahoo! Finance. (2025). EUR/USD (EURUSD=X) live rate, chart & news. https://finance.yahoo.com/quote/EURUSD=X/
-
 Federal Reserve. (2025). Interest Rates – Federal Funds Target Rate. https://www.federalreserve.gov/monetarypolicy/
-
 European Central Bank. (2025). Euro Foreign Exchange Reference Rates. https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/
