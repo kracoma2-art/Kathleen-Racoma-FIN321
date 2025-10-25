@@ -29,11 +29,14 @@ To acheive the objectives of the project I will be using a step by step approach
 
 ## Limitations & Next Steps
 Limitations: Our analysis assumes current marekt rates remain stable when the hedge is executed. This prototype does not include operational or tax impacts of hedging decisions. It may be hard to gather all the infromation and intergrate it into the prototype.
+
 Next Steps: Confirm data on latest spot, forward, and interest rates asap with the finance team. Build the excel prototype with the treasury team to implement the testing of the three hedging strategies.
 
 ---
 
 ## References
 Yahoo! Finance. (2025). EUR/USD (EURUSD=X) live rate, chart & news. https://finance.yahoo.com/quote/EURUSD=X/
+
 Federal Reserve. (2025). Interest Rates – Federal Funds Target Rate. https://www.federalreserve.gov/monetarypolicy/
+
 European Central Bank. (2025). Euro Foreign Exchange Reference Rates. https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/
