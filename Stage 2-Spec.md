@@ -18,17 +18,12 @@
 
 Our U.S. based technology services firm expects to receive 12,500,000 euros in one year for services rendered to a European client, creating exposure to potential EUR/USD exchange rate fluctuations. This specification outlines the analytical framework for quantifying and evaluating three hedging strategies which are a forward contract, a money market hedge, and an options hedge. With this, we'll be able to protect the USD value of this receivable while allowing comparison of certainty versus flexibility.
 
-Example phrasing:
-> Our company expects to receive EUR-denominated revenue in 12 months, exposing us to potential FX risk from fluctuations in the EURUSD rate. This specification outlines the analytical framework for quantifying, comparing, and evaluating alternative hedging strategies to mitigate that risk.
-
-Include:
+Details:
 - Exposure type: Foreign currency receivable (EUR) 
 - Foreign currency amount: 12,500,000 Euros
 - Time horizon: 1 year
 - Objective: Protect USD cash flow
 - Decision context: Corporate treasury
-
-> *A strong statement demonstrates clear understanding of both financial context and business implications.*
 
 ---
 
@@ -39,13 +34,13 @@ Create a clean, professional input table. This will become the foundation for yo
 | Variable | Description | Unit | Example | Source |
 |-----------|-------------|------|----------|--------|
 | `FC_AMT` | Foreign-currency receivable | EUR | 1,200,000 | Company data |
-| `S₀` | Current EURUSD spot rate | USD/EUR | [Look up] | Market data |
+| `S₀` | Current EURUSD spot rate | USD/EUR | 1.1632 | Market data |
 | `F₀` | 1-year EURUSD forward rate | USD/EUR | 1.0890 | Provided |
-| `r_USD` | USD 1-year interest rate | % | [Look up] | Market data |
-| `r_EUR` | EUR 1-year interest rate | % | [Look up] | Market data |
+| `r_USD` | USD 1-year interest rate | % | 5.25 | Market data |
+| `r_EUR` | EUR 1-year interest rate | % | 3.75 | Market data |
 | `t` | Time to maturity | Years | 1 | Derived |
-| `K_put` | EUR Put strike | USD/EUR | [Set at spot] | Analyst choice |
-| `K_call` | EUR Call strike | USD/EUR | [Set at spot] | Analyst choice |
+| `K_put` | EUR Put strike | USD/EUR | 1.1632 | Analyst choice |
+| `K_call` | EUR Call strike | USD/EUR | 1.1632 | Analyst choice |
 | `Premium_put` | Put premium | USD per contract | 0.017 | Scenario |
 | `Premium_call` | Call premium | USD per contract | 0.022 | Scenario |
 
