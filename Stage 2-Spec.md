@@ -101,10 +101,17 @@ How I will test and visualize FX outcomes:
 
 ## 7. Limitations & Next Steps
 
-Briefly note any analytical limits (e.g., volatility ignored, credit risk excluded) and outline your immediate next step (e.g., model build in Stage 3).
+Limitations: 
+1. Volatility and correlation effects are not modeled.
+2. Transaction costs, tax effects, and accounting implications are excluded.
+3. Assumes constant interest rates and option premiums.
+4. Real market execution prices may differ due to spreads and liquidity.
 
-Example phrasing:
-> This specification does not incorporate implied volatility or transaction costs. The next phase will involve constructing an Excel model implementing this logic to quantify results under each hedge structure.
+Next Steps:
+1. Confirm current EURUSD spot, forward, and interest rate data with the finance team.
+2. Build the Excel model implementing this specification.
+3. Test hedge results using sensitivity analysis.
+4. Summarize findings and recommend the optimal hedging approach to the CFO.
 
 ---
 
