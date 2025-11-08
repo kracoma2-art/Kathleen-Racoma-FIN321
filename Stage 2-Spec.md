@@ -22,10 +22,11 @@ Example phrasing:
 > Our company expects to receive EUR-denominated revenue in 12 months, exposing us to potential FX risk from fluctuations in the EURUSD rate. This specification outlines the analytical framework for quantifying, comparing, and evaluating alternative hedging strategies to mitigate that risk.
 
 Include:
-- Exposure type (receivable or payable)  
-- Foreign currency amount and time horizon  
-- Objective (e.g., protect USD value, preserve upside)  
-- Decision context (corporate treasury or business unit)
+- Exposure type: Foreign currency receivable (EUR) 
+- Foreign currency amount: 12,500,000 Euros
+- Time horizon: 1 year
+- Objective: Protect USD cash flow
+- Decision context: Corporate treasury
 
 > *A strong statement demonstrates clear understanding of both financial context and business implications.*
 
