@@ -16,7 +16,7 @@
 
 ## 1. Problem Statement
 
-Briefly restate the exposure and objective in professional terms.
+Our U.S. based technology services firm expects to receive 12,500,000 euros in one year for services rendered to a European client, creating exposure to potential EUR/USD exchange rate fluctuations. This specification outlines the analytical framework for quantifying and evaluating three hedging strategies which are a forward contract, a money market hedge, and an options hedge. With this, we'll be able to protect the USD value of this receivable while allowing comparison of certainty versus flexibility.
 
 Example phrasing:
 > Our company expects to receive EUR-denominated revenue in 12 months, exposing us to potential FX risk from fluctuations in the EURUSD rate. This specification outlines the analytical framework for quantifying, comparing, and evaluating alternative hedging strategies to mitigate that risk.
