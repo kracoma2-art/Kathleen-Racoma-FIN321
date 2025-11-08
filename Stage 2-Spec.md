@@ -29,8 +29,6 @@ Details:
 
 ## 2. Inputs (Known Variables)
 
-Create a clean, professional input table. This will become the foundation for your spreadsheet and future AI prompts.
-
 | Variable | Description | Unit | Example | Source |
 |-----------|-------------|------|----------|--------|
 | `FC_AMT` | Foreign-currency receivable | EUR | 1,200,000 | Company data |
@@ -44,22 +42,18 @@ Create a clean, professional input table. This will become the foundation for yo
 | `Premium_put` | Put premium | USD per contract | 0.017 | Scenario |
 | `Premium_call` | Call premium | USD per contract | 0.022 | Scenario |
 
-> *Tip:* Keep labels short and standardized. Think like a financial modeler — these names should become variable names, spreadsheet inputs, or prompt parameters later.
-
 ---
 
 ## 3. Assumptions & Constraints
 
-State all conventions used. Clarity here ensures reproducibility.
-
-Example list:
+List:
+- Spot and forward rates are assumed to remain stable during hedge execution
+- No early exercise or path dependency for options (European-style options)
 - Interest rates are quoted on a simple annual basis.  
 - Forward rate provided represents a 1-year maturity.  
 - Transaction and credit costs are excluded.  
 - Option premiums are paid upfront in USD.  
 - Exchange rates expressed as USD per EUR.  
-
-> *Write assumptions so another treasury analyst could replicate your results exactly.*
 
 ---
 
@@ -67,14 +61,18 @@ Example list:
 
 Describe the logic and sequencing of your analysis — as if briefing a junior analyst or AI model builder. Focus on **order of operations**, not formulas.
 
-Example flow:
-1. Compute USD proceeds under the forward hedge.  
-2. Recreate a synthetic forward using money market parity to validate rates.  
-3. Compute option hedge outcomes for both the EUR put and EUR call under varying spot outcomes \(S_T\).  
-4. Compare USD results across hedges at the base case and across sensitivity scenarios.  
-5. Summarize the trade-offs (certainty vs. optionality vs. cost).  
-
-> *Your goal: anyone reading this section should know exactly how to implement your logic in Excel or code — without you explaining formulas.*
+Flow:
+1. Multiply the EUR receivable by the forward rate to determine fixed USD proceeds
+2. Discount the EUR receivable using the EUR interest rate to find today's EUR present value
+3. Convert that EUR PV to USD at the current spot rate
+4. Invest USD proceeds at the USD rate to project 1-year USD value
+5. Cross check against forward parity
+6. Compute USD proceeds under EUR put hedge across possible spot rates (S_T)
+7. Compute USD proceeds under EUR call hedge across S_T
+8. Adjust each by subtracting the respective option premium cost
+9. Compare USD results across hedges at the base case and across sensitivity scenarios.  
+10. Compare results across the various hedges
+11. Highlight and summarize trade offs.
 
 ---
 
