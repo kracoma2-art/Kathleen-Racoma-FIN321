@@ -91,14 +91,11 @@ Flow:
 
 ## 6. Sensitivity Plan
 
-Define how you will test and visualize FX outcomes.
-
-Example:
-> Vary EURUSD spot at maturity \(S_T\) from 0.95×S₀ to 1.05×S₀ in increments of 0.01.  
-> For each value, compute USD proceeds under all hedge strategies.  
-> Present results as a comparison table and line chart.
-
-> *Professional analysts always test sensitivity — it shows how robust their recommendations are.*
+How I will test and visualize FX outcomes: 
+1. Vary EURUSD spot at maturity (S_T) from 0.95×1.1632 = 1.1040 to 1.05×1.1632 = 1.2214 in 0.01 increments.
+2. For each S_T, calculate USD proceeds for all hedge types
+3. Display results in a comparison table and a line chart
+4. Highlight how each hedge performs under a strengthening or weakening EUR
 
 ---
 
