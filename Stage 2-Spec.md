@@ -78,18 +78,14 @@ Flow:
 
 ## 5. Outputs
 
-List expected results from the model. These become your **spreadsheet outputs**, **AI prompt targets**, and **Stage 5 discussion points**.
-
 | Output | Description | Format | Purpose |
 |---------|--------------|---------|----------|
 | `USD_forward` | USD proceeds from forward hedge | Numeric | Certainty benchmark |
-| `USD_mm` | USD proceeds from money market hedge | Numeric | Cross-check against forward |
-| `USD_put` | USD proceeds from EUR put hedge | Table | Sensitivity & protection |
-| `USD_call` | USD proceeds from EUR call hedge | Table | Optional upside case |
-| `Chart_1` | Hedge outcomes vs. S_T | Line chart | Visual comparison |
-| `Summary` | Written conclusion | 1–2 paragraphs | Executive-ready takeaway |
-
-> *Outputs should read like a professional financial dashboard — clear, repeatable, and decision-focused.*
+| `USD_mm` | USD proceeds from money market hedge | Numeric | Cross-check and validation |
+| `USD_put` | USD proceeds from EUR put hedge | Table | Downside protection analysis |
+| `USD_call` | USD proceeds from EUR call hedge | Table | Upside case |
+| `Chart_1` | Hedge outcomes vs. S_T | Line chart | Visual comparison of strategies |
+| `Summary` | Written conclusion | 1–2 paragraphs | Executive-ready interpretation |
 
 ---
 
