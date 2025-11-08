@@ -1,9 +1,9 @@
 # [Spec Title] – Technical Specification Template
 
-**Created by:** [name]  
-**Updated by:** [name]  
-**Date Created:** [date]  
-**Date Updated:** [date]  
+**Created by:** [Kathleen Racoma]  
+**Updated by:** [Kathleen Racoma]  
+**Date Created:** [11/7/25]  
+**Date Updated:** [11/7/25]  
 **Version:** [0.0]
 **LLM Used:"" [LLM] (optional if LLm used)
 
