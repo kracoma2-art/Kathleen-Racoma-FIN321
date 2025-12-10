@@ -143,4 +143,5 @@ The file must:
 ---
 
 # END OF PROMPT
+[FX_Hedge_Model_Racoma.xlsx](https://github.com/user-attachments/files/24067246/FX_Hedge_Model_Racoma.xlsx)
 
