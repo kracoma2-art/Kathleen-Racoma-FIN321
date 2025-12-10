@@ -31,15 +31,25 @@ Assumptions:
 # INPUT VARIABLES (USE EXACT VALUES)
 Assign these as **named ranges**:
 FC_AMT = 12,500,000
+
 S0_in = 1.1632
+
 F0_in = 1.0890
+
 R_USD = 5.25%
+
 R_FC = 3.75%
+
 K_PUT = 1.1632
+
 K_CALL = 1.1632
+
 PREM_PUT = 0.017
+
 PREM_CALL = 0.022
+
 T_DAYS = 360
+
 T_YRS = 1
 
 ---
