@@ -58,15 +58,25 @@ T_YRS = 1
 
 ## 1. Named Ranges (must match exactly)
 FC_AMT
+
 S0_in
+
 F0_in
+
 R_USD
+
 R_FC
+
 K_PUT
+
 K_CALL
+
 PREM_PUT
+
 PREM_CALL
+
 T_DAYS
+
 T_YRS
 
 
