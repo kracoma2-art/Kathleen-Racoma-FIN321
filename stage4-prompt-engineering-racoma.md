@@ -1,6 +1,6 @@
 # Stage 4: Structured AI Prompt  
 FX Hedging Model (Forward, Money Market, Options)  
-Role: Finance Technologist / Treasury Analyst
+Role: Finance Technologist / Treasury Analyst  
 Created by: [Kathleen Racoma]  
 Updated by: [Kathleen Racoma]  
 Date Created: [12/9/25]  
