@@ -1,6 +1,10 @@
 # Stage 4 — Structured AI Prompt  
 FX Hedging Model (Forward, Money Market, Options)  
-Role: Finance Technologist / Treasury Analyst  
+Role: Finance Technologist / Treasury Analyst
+Created by: [Kathleen Racoma]
+Updated by: [Kathleen Racoma]
+Date Created: [12/9/25]
+Date Updated: [12/12/25]
 
 ## GOAL
 Generate a fully functional Excel (.xlsx) spreadsheet that evaluates FX hedging strategies for a EUR receivable using a forward hedge, money market hedge, and option hedges (EUR put and EUR call). The model must be professional, auditable, and CFO-ready.
