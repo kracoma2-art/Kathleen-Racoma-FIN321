@@ -82,4 +82,5 @@ Confirm parity between forward and money market hedges, confirm all named ranges
 ## EXPORT
 Return a downloadable Excel (.xlsx) file.
 
+Result: [FX_Hedging_Model_EUR_Receivable.xlsx](https://github.com/user-attachments/files/24140465/FX_Hedging_Model_EUR_Receivable.xlsx)
 
