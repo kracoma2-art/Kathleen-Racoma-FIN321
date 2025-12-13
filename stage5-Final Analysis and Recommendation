@@ -1,192 +1,162 @@
-# Stage 5 – Final Analysis & Recommendation (6 Points)
-**Due:** December 12, 2025
+# Stage 5 – Final FX Hedge Analysis & Recommendation  
+**EUR Receivable Exposure – 1-Year Horizon**
 
-## Goal
-Deliver a polished, executive-ready memo or slide deck summarizing your hedge analysis and recommending the best strategy. This combines quantitative rigor, interpretation, communication, and forward-looking perspective — exactly what senior finance leaders expect from analysts.
-
-**Hint:** Think of this as just another step ("final analysis memo prompt") and have your LLM generate the output based on your **Stage 4 - Spreadsheet**. 
-
----
-
-# Deliverable Requirements (1-2 page .md file uploaded to GitHub)
-
-Must include:
+**Prepared by:** Kathleen Racoma  
+**Role:** Financial Analyst / Treasury Analyst  
+**Audience:** CFO / Director of Treasury  
+**Date:** December 12, 2025  
 
 ---
 
-## A. Exposure Summary
-Brief restatement:
-- EUR receivable
-- Timing
-- FX risk and consequences for USD cash flows
+## A. Exposure Summary (Stage 2 Reference)
+
+As defined in **Stage 2 – Technical Specification**, the firm expects to receive:
+
+- **EUR Receivable:** €12,500,000  
+- **Time Horizon:** 1 year  
+- **Exposure Type:** Transaction exposure  
+- **Functional Currency:** USD  
+
+Because the receivable is denominated in euros while reporting and budgeting are in U.S. dollars, the firm is exposed to fluctuations in the EUR/USD exchange rate. A depreciation of the euro reduces USD cash inflows, while an appreciation increases USD proceeds but introduces uncertainty.
+
+The objective across Stages 2–4 is to **protect USD cash flows** while evaluating the tradeoff between **certainty and flexibility** across hedging instruments.
 
 ---
 
-## B. Summary of Hedge Outcomes
-Compare:
-- Forward hedge USD proceeds  
-- Money Market hedge USD proceeds  
-- Option hedge payoffs at different S_T values  
+## B. Summary of Hedge Outcomes (Stage 4 Model Results)
 
-Focus on insight rather than computation.
+Using the **Stage 4 Excel hedging model**, three strategies were evaluated under identical assumptions and named ranges.
+
+### Forward Hedge
+- Locks in the 1-year forward rate of **1.0890 USD/EUR**.
+- Guaranteed USD proceeds equal to:  
+  **€12,500,000 × 1.0890 = $13,612,500**
+- Eliminates all FX uncertainty regardless of future spot rates.
+
+### Money Market Hedge
+- Replicates a forward hedge using interest rate parity.
+- Produces **near-identical USD proceeds** to the forward hedge in the Stage 4 model.
+- Minor differences reflect funding mechanics rather than FX risk.
+
+### Option Hedge
+- Establishes a downside floor while preserving upside potential.
+- USD proceeds vary depending on the terminal spot rate (**Sₜ**):
+  - Downside protection when EUR depreciates
+  - Upside participation when EUR appreciates
+- Net proceeds are reduced by the **upfront option premium**, as shown in Stage 4.
+
+Overall, the Stage 4 outputs show that **forward and money market hedges maximize certainty**, while **options introduce flexibility at a measurable cost**.
 
 ---
 
-## C. Sensitivity Interpretation
-Explain hedge behavior for:
-- EUR depreciation  
-- EUR appreciation  
+## C. Sensitivity Interpretation (Stage 3 Logic Applied)
 
-Highlight differences in certainty, flexibility, and cost.
+### EUR Depreciation Scenario (Sₜ < Strike)
+- **Forward Hedge:** USD proceeds remain fixed at $13.61M.
+- **Money Market Hedge:** USD proceeds remain effectively fixed.
+- **Option Hedge:** Option is exercised, limiting downside losses, though net proceeds are reduced by the premium.
+
+### EUR Appreciation Scenario (Sₜ > Strike)
+- **Forward Hedge:** No participation in favorable FX movements.
+- **Money Market Hedge:** No upside participation.
+- **Option Hedge:** Higher USD proceeds realized as spot appreciation outweighs the premium cost.
+
+### Key Tradeoffs Observed in Stage 4
+- **Certainty:** Forward ≈ Money Market > Options  
+- **Flexibility:** Options > Forward ≈ Money Market  
+- **Cost Transparency:** Forward > Money Market > Options  
 
 ---
 
 ## D. Strategic Recommendation
-Choose one:
-- Forward  
-- MM  
-- Put  
-- Call  
-- Combination  
 
-Support with data, risk profile, and business strategy.
+**Recommended Strategy: Forward Hedge**
+
+Based on the Stage 4 quantitative results and the firm’s stated objective of USD cash flow protection, the forward hedge is the most appropriate strategy.
+
+The forward hedge:
+- Fully eliminates FX risk
+- Produces known USD proceeds of **$13.61M**
+- Avoids upfront premium costs
+- Minimizes operational and balance sheet complexity
+
+While the option hedge provides upside participation, the premium represents an explicit cost that is inconsistent with a non-speculative treasury mandate.
 
 ---
 
 ## E. Executive Justification
-Use management-level reasoning:
-- Cash flow stability  
-- Budget certainty  
-- Liquidity  
-- Optionality  
-- Premium costs  
-- Accounting implications (optional)  
+
+From a CFO and treasury management perspective, the forward hedge best supports:
+
+- **Cash Flow Stability:** Guaranteed USD inflows
+- **Budget Certainty:** No FX-related earnings volatility
+- **Liquidity Preservation:** No premium paid upfront
+- **Operational Simplicity:** Clean execution and documentation
+- **Accounting Clarity:** Straightforward hedge accounting treatment
+
+The strategy aligns with conservative corporate risk management principles rather than return-seeking behavior.
 
 ---
 
-# Extra Credit (2 points): Areas for Further Study & Improvement
+## Extra Credit – Areas for Further Study & Improvement
 
-Include at least three of the following:
+### 1. OpenAI Codex / Code Interpreter
+Codex could:
+- Validate Stage 4 hedge formulas automatically
+- Convert the Excel model into Python
+- Run Monte Carlo FX simulations across thousands of Sₜ outcomes
+- Regenerate audit-ready models on demand  
 
----
+This reduces operational risk and strengthens model governance.
 
-## 1. Claude Skills (Automation & Live Data Integration)
-Claude Skills can:
-- Pull live FX spot rates and yields  
-- Update models automatically  
-- Regenerate spreadsheets on demand  
-- Validate hedge calculations  
-- Produce instant summary reports  
+### 2. Claude Skills (Automation & Live Data Integration)
+Claude Skills could:
+- Pull live FX spot rates and yield curves
+- Auto-update hedge outcomes
+- Regenerate spreadsheets and executive summaries
+- Validate calculations before hedge execution  
 
-Explain how a Skill could automate or improve your model.
+This enables real-time treasury decision support.
 
----
+### 3. GitHub Automation & Version Control (Required)
 
-## 2. OpenAI Codex / Code Interpreter
-Codex can:
-- Generate spreadsheets from pseudocode  
-- Validate formulas  
-- Convert your model into Python for advanced analysis  
-- Run sensitivity loops or Monte Carlo simulations  
-- Support audit-ready model regeneration  
+**What Version Control Is**
+- Every model change is committed and traceable
+- Full revision history is permanent and reversible
+- Prevents silent spreadsheet errors
 
-Discuss how Codex reduces operational risk.
+**Why It Matters in Finance**
+- Supports hedge accounting documentation
+- Strengthens internal controls
+- Preserves data lineage and auditability
 
----
+**Workflow Across Stages 2–4**
+- Stage 2: Specifications versioned
+- Stage 3: Logic and assumptions reviewed
+- Stage 4: Models regenerated consistently from prompts  
 
-## 3. Claude Code / Multi-File Reasoning
-Claude can:
-- Read & update multiple files (Excel, CSV, MD)  
-- Create dashboards or charts  
-- Maintain consistency across versions  
-- Automate model rebuilding  
+GitHub enables consistent, auditable model regeneration.
 
-Explain how multi-file reasoning enhances your modeling workflow.
-
----
-
-## 4. GitHub Automation & Version Control (Required Discussion)
-
-### What Version Control Is
-- Each change becomes a committed revision  
-- Full history is permanent & reversible  
-- Prevents silent spreadsheet errors  
-- Builds auditability & transparency  
-
-### Why It Matters in Finance
-Finance relies on:
-- Hedge accounting documentation  
-- Internal controls  
-- Data lineage  
-- Multi-user workflows  
-
-### How Collaboration Works
-- Branching for parallel work  
-- Pull Requests for review  
-- GitHub Actions for automated testing/validation  
-- Issue tracking for model updates  
-
-Tie this to your Stages 2–4:
-> “Specs, model templates, and AI prompts can all be versioned in GitHub to enable consistent, auditable model regeneration.”
+### 4. Accounting & Audit Integration
+- Supports OCI vs. P&L hedge accounting documentation
+- Enables reproducible hedge effectiveness testing
+- GitHub commit history serves as audit evidence
 
 ---
 
-## 5. Accounting / Audit Integration
-Explain relevance:
-- OCI vs P&L hedge accounting flows  
-- Documentation requirements  
-- Importance of reproducibility  
-- GitHub as audit evidence  
+## Career & Professional Relevance
 
----
-
-# Expanded Career Insight
-
-This project builds skills used in:
-
-### Corporate Treasury
-- Exposure management  
-- Hedge design & performance testing  
-- AI-augmented scenario analysis  
-
-### Investment Banking
-- Cross-border deal modeling  
-- FX-sensitive valuation adjustments  
-
-### FP&A
-- Cash flow forecasting  
-- Scenario building  
-- Budget risk assessment  
-
-### Accounting & Audit
-- OCI/P&L documentation  
-- Hedge effectiveness proof  
-- Version-controlled models  
-- Audit trail creation  
-
-### Data, Analytics, & AI Roles
-- Spec → model → prompt → automation  
-- GitHub collaboration  
-- AI-assisted financial modeling  
-- Data governance & reproducibility  
-
----
-
-# Why This Matters
-This multi-stage journey reflects workflows used at:
-- BlackRock  
-- Tesla  
-- McKinsey  
-- Big 4 Audit firms  
-- Quant funds  
-- Corporate treasury teams  
-- Fintech / robo-advisors  
+This project reflects workflows used in:
+- Corporate Treasury and FP&A
+- Investment Banking
+- Big 4 Audit and Advisory
+- FinTech and AI-driven finance roles
 
 You are demonstrating:
-- Analytical reasoning  
-- Automation fluency  
-- Model governance  
-- Financial decision leadership  
-- Technical communication  
+- FX exposure management
+- Hedge strategy evaluation
+- Model governance
+- AI-augmented financial analysis
+- Executive-level financial communication
 
-## This is a portfolio-ready artifact for internships, jobs, and graduate programs!
+This is a portfolio-ready artifact suitable for internships, full-time roles, and graduate programs.
